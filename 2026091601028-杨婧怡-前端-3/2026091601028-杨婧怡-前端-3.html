@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>经典电影《美人鱼》</title>
     <style>
+ 
     h1{
         color:cadetblue;
     }
@@ -12,30 +13,28 @@
         color:cornflowerblue
     }
     p{
-        text-indent:30px;
+        text-indent: 2em;/*两个缩进，可以直接30px*/
+        line-height: 1.6;/*行高*/
     }
     th,td{
-        text-align:center;
+        text-align:center;/*表格中的内容居中*/
     }
     table,td{
         border:3px solid rgb(48, 42, 70);
     }
     table{
-        border-collapse:collapse;
-        text-align:center;
+        border-collapse:collapse;/* 合并相邻边框，去掉双层线 */
+        text-align:center;/* 表格内文字居中 */
         width:200px;
         height:250px;
     }
     .container{
-        grid-template-columns: repeat(2,8
-        00px);
-        grid-template-rows: repeat(1,900px);
-        gap:10px;
+        display:grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(1,1fr);
         margin:50px auto;
         width:fit-content;
-        display:grid;
         gap:40px;
-        
     }
     .cross-grid{
         display:grid;
@@ -43,18 +42,18 @@
         grid-template-rows: repeat(5,150px);
         gap:10px;
         margin:50px auto;
-        width:fit-content;
+        object-fit: cover; 
         
     }
     .grid-stem img {
     width: 100%;
-    height: 100%;
+    height: 100%; 
     object-fit: cover; 
-    border-radius: 12px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);  
+    border-radius: 12px;/*圆角*/
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);/*阴影*/  
     }
     .grid-stem:hover {
-    transform: scale(1.08);
+    transform: scale(1.08);  /*浮动效果*/
     border-color: #2c1ea7;
     box-shadow: 0 8px 25px rgba(44, 17, 119, 0.4);
     z-index: 99;
@@ -66,7 +65,7 @@
         grid-template-rows: repeat(5,150px);
         gap:10px;
         margin:50px auto;
-        width:fit-content;
+        object-fit: cover; 
     }
     .blank {
     visibility: hidden;
@@ -88,7 +87,7 @@
         <p>如果世界上连一滴干净的水，一口干净的空气都没有，挣再多的钱也是死路一条。</p>
         <cite>——《美人鱼》</cite>
     </blockquote></h2>
-    <img src="https://s41.ax1x.com/2026/10/13/pnaBFTs.jpg" alt="图片无法显示" border="0"  >
+    <img src="https://s41.ax1x.com/2026/10/13/pnaBFTs.jpg" alt="图片无法显示" border="0"  ></center>
 <br>
 <div class="container">
 
@@ -132,24 +131,22 @@
         <div class="grid-stem blank"> </div>
         <div class="grid-stem blank"> </div>
         <div class="grid-stem"> <img src="19.jpg"></div>
-       <div class="grid-stem"> <img src="20.jpg"></div>
+        <div class="grid-stem"> <img src="20.jpg"></div>
         <div class="grid-stem blank"> </div>
         <div class="grid-stem"> <img src="logo.webp"></div>
         <div class="grid-stem blank"> </div>
         <div class="grid-stem"> <img src="21.jpg"></div>
-       <div class="grid-stem"> <img src="22.jpg"></div>
+        <div class="grid-stem"> <img src="22.jpg"></div>
         <div class="grid-stem blank"> </div>
         <div class="grid-stem blank"> </div>
         <div class="grid-stem blank"> </div>
         <div class="grid-stem"> <img src="23.jpg"></div>
-       <div class="grid-stem"> <img src="24.jpg"></div>
-       <div class="grid-stem"> <img src="25.jpg"></div>
-       <div class="grid-stem"> <img src="3.jpg"></div>
-       <div class="grid-stem"> <img src="27.jpg"></div>
-       <div class="grid-stem"> <img src="28.jpg"></div>
-       
-        
-        
+        <div class="grid-stem"> <img src="24.jpg"></div>
+        <div class="grid-stem"> <img src="25.jpg"></div>
+        <div class="grid-stem"> <img src="3.jpg"></div>
+        <div class="grid-stem"> <img src="27.jpg"></div>
+        <div class="grid-stem"> <img src="28.jpg"></div>
+
      </div>
      </div>
     <a href="https://m.v.qq.com/x/m/play?cid=xg95sxi4q7zc4uo&vid=s00429cehc3">腾讯视频《美人鱼》在线观看</a>
@@ -253,6 +250,6 @@
     </div>
         <h1>精彩片段</h1>
         <a href="https://www.bilibili.com/video/BV1HZVe6BEfW?t=102.5">点击观看</a>
-    </div></center>
+    </div>
 </body>
 </html>
